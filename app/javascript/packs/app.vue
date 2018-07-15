@@ -26,7 +26,7 @@
     </v-navigation-drawer>
     <v-toolbar dark fixed>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>812 Fantasy Football Stats</v-toolbar-title>
+      <v-toolbar-title>Demo Fantasy Football Stats</v-toolbar-title>
     </v-toolbar>
     <main>
       <v-container fluid>

@@ -17,8 +17,8 @@ export default {
   data() {
     return {
       loading: false,
-      heading: '812 Fantasy Football Stats',
-      subheading: 'Historical data since keeper league formation in 2012.',
+      heading: 'Demo Fantasy Football Stats',
+      subheading: 'Fake names, real data scraped from Yahoo Fantasy league pages',
       standings: null
     }
   },
