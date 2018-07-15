@@ -1,0 +1,19 @@
+%v-navigation-drawer{persistent: '',
+                     'v-model': 'drawer',
+                     'enable-resize-watcher': '',
+                     clipped: ''}
+  %v-list
+    %v-list-group{'v-for': 'item in navItems', 'v-bind:key': 'item.title'}
+      %v-list-tile{slot: 'item', '@click': '', ripple: ''}
+        %v-list-tile-action
+          %v-icon {{ item.action }}
+        %v-list-tile-content
+          %v-list-tile-title {{ item.title }}
+        %v-list-tile-action{'v-if': 'item.subItems.length > 0'}
+          %v-icon keyboard_arrow_down
+      %a{'v-for': 'subItem in item.subItems',
+         'v-bind:href': "`/owners/${subItem.id}`",
+         'v-bind:key': 'subItem.id'}
+        %v-list-tile{'@click': '', ripple: ''}
+          %v-list-tile-content
+            %v-list-tile-title {{ subItem.name || subItem.year }}

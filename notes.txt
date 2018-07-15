@@ -1,0 +1,9 @@
+iPhone screen sizes (l x w)
+
+Chrome DevTools uses Pts, not Pixels
+
+5     - Pts: 568 x 320 - Pixels: 1136 x 640
+
+6/7   - Pts: 667 x 375 - Pixels: 1334 x 750
+
+6+/7+ - Pts: 736 x 414 - Pixels: 1920 x 1080
