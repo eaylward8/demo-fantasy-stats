@@ -31,9 +31,9 @@ class FantasyScraper
 
   def get_past_season_home(year)
     season_form = get_league_home.forms.select { |form| form.has_field?('seasonspec') }.first
-    season_form.field_with(name: 'seasonspec').options.select do |o|
-      o.text == year.to_s
-    end.first.tick
+    season_form.field_with(name: 'seasonspec').options.find do |o|
+      !!o.text.match(/#{year}/)
+    end.tick
     @agent.submit(season_form)
   end
 end
