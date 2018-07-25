@@ -7,3 +7,5 @@ Chrome DevTools uses Pts, not Pixels
 6/7   - Pts: 667 x 375 - Pixels: 1334 x 750
 
 6+/7+ - Pts: 736 x 414 - Pixels: 1920 x 1080
+
+testing
