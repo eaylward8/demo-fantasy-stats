@@ -3,7 +3,7 @@
 class Owner < ApplicationRecord
   has_many :teams
   validates :name, presence: true
-  include OwnerTeamNameMap
+  # include OwnerTeamNameMap
 
   # ideas
   # avg points against per week (reg season and playoffs)
